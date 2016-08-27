@@ -9,6 +9,9 @@ const ngRoute = require('angular-route');
 const dataApp = angular.module('dataApp', [ngRoute]);
 dataApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
+  .when('/', {
+    redirectTo: '/about'
+  })
   .when('/about', {
     template: require('./view/about/about.html')
   })
