@@ -1,10 +1,9 @@
 {
   "name": "lab-35",
   "version": "1.0.0",
-  "description": "",
   "main": "app/server.js",
   "scripts": {
-    "watch": "./node_modules/webpack-dev-server_bin_webpack-dev-server.js --inline --hot",
+    "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -28,5 +27,7 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

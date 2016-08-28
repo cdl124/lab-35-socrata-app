@@ -6,11 +6,12 @@ require('./scss/base.scss');
 const angular = require('angular');
 const ngRoute = require('angular-route');
 
-const dataApp = angular.module('dataApp', [ngRoute]);
-dataApp.config(['$routeProvider', function($routeProvider) {
+angular.module('dataApp', [ngRoute])
+.config(['$routeProvider', function($routeProvider) {
   $routeProvider
   .when('/', {
-    redirectTo: '/about'
+    // redirectTo: '/about'
+    template: require('./html/home.html')
   })
   .when('/about', {
     template: require('./view/about/about.html')
