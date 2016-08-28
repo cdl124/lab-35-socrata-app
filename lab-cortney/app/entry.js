@@ -10,7 +10,6 @@ angular.module('dataApp', [ngRoute])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider
   .when('/', {
-    // redirectTo: '/about'
     template: require('./html/home.html')
   })
   .when('/about', {
@@ -19,8 +18,13 @@ angular.module('dataApp', [ngRoute])
   .when('/data', {
     template: require('./view/data/data.html')
   })
+  .when('/kingco-population', {
+    template: require('./view/kingco-population/kingco-population.html')
+  })
   .otherwise({
     template: require('./view/404/404.html'),
     controller: 'FourOhFourController'
   });
 }]);
+
+  // redirectTo: '/about'

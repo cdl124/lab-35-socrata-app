@@ -46,11 +46,12 @@ module.exports = {
     loaders: [
       {
         test: /\.scss$/,
-        loader: ExtractText.extract('style', 'css!postcss!sass')
+        loader: ExtractText.extract('style', 'css!postcss!sass!')
       },
       {
         test: /\.js$/,
         loader: 'babel',
+        exclude: /node_modules/,
         query: {
           presets: ['es2015']
         }
