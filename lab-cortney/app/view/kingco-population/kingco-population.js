@@ -3,4 +3,9 @@
 const angular = require('angular');
 const dataApp = angular.module('dataApp', []);
 
-dataApp.controller
+dataApp.controller('KingcoPopController', [KingcoPopController]);
+
+function KingcoPopController() {
+
+  
+}
